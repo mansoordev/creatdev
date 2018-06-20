@@ -1,0 +1,82 @@
+.header {
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-primary-light, 0.8), 
+        rgba($color-primariy-dark, 0.7)) , 
+        url(../img/headerbg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &__logo-box {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+
+    &__logo {
+        height: 35px;
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    &__contact {
+        width: 70%;
+        height: 10rem;
+        position: absolute;
+        border-radius: 4px;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: linear-gradient(
+        to right, 
+        rgba($color-primary-light, 0.5), 
+        rgba($color-primariy-dark, 0.5));
+
+        @include respond(phone) {
+            display: none;
+        }
+
+        &--icon-box {
+            width: 30%;
+            height: 10rem;
+            display: inline-block;
+        }
+
+        &--icon {
+            font-size: 6rem;
+            color: white;
+            float: left;
+            width: 25%;
+            margin-left: 2rem;
+            margin-top: .5rem;
+
+            @include respond(tab-port) {
+                font-size: 5rem;
+            }
+        }
+
+        &--info {
+            width: 65%;
+            float: right;
+            color: white;
+            font-size: 2rem;
+            margin-top: 1.5rem;
+
+            @include respond(tab-port) {
+                font-size: 1.5rem;
+            }
+        }
+
+        &--heading {
+            font-weight: 700;
+        }
+    }
+}

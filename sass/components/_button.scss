@@ -1,0 +1,122 @@
+.btn {
+    &--animated {
+        animation-name: SlideInFromBottom;
+        animation-fill-mode: backwards;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.75s;
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+        // border-radius: 100px;
+    }
+
+    &--pulse {
+        animation: PulseEffect 3s infinite;
+        transition: all .5s;
+    }
+    
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 12px 40px;
+        transition: all .5s;
+        position: relative;
+        // border-radius:100px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    &:hover {
+        box-shadow: 0 10px 20px rgba($color-black, .2);
+        // transform: scale(1.1);
+
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba($color-black, 0.2);
+    }
+    
+    &--white {
+        background-color: $color-white;
+        color: $color-grey-dark;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--blue {
+        background-image: linear-gradient(
+        to left, 
+        rgba($color-primary-light, 1), 
+        rgba($color-primariy-dark, 1));
+        color: $color-white;
+        transition: all .5s;
+
+        &::after {
+        background-image: linear-gradient(
+        to left, 
+        rgba($color-primary-light, 1), 
+        rgba($color-primariy-dark, 1));
+        transition: all .5s;
+        }
+
+        &:hover {
+            filter: saturate(5);
+        }
+    }
+
+    &--round {
+        
+        &::after {
+            border-radius: 100px;
+        }
+
+        &:link,
+        &:visited {
+            border-radius: 100px;
+        }
+    }
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        font-size: $default-font-size;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 2rem rgba($color-black, .15);
+        transform: translateY(0px);
+    }
+}
