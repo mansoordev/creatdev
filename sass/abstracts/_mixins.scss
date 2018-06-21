@@ -1,3 +1,4 @@
+// Mixin for normal clearfix
 @mixin clearfix {
     &::after {
         content: "";
@@ -6,8 +7,8 @@
     }
 }
 
-// Order: Base + Typography > General Layout + Grid > Page Layouts > Components
 
+// Responsive sizes for devices i.e. phone, tablet portable, tablet landscape and desktop
 @mixin respond($breakpont) {
     @if $breakpont == phone {
         @media (max-width: 37.5em) {@content}; //600px

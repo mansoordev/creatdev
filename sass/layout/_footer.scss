@@ -1,3 +1,4 @@
+// Styling for the global footer section
 .footer {
     background-image: linear-gradient(
         to right bottom, 
@@ -16,6 +17,8 @@
         font-size: 1.6rem;
     }
 }
+
+// Styling for the theme powered by section
 .powered {
     background-color: rgba($color-grey-dark-4, 1);
     padding: 5rem 0;

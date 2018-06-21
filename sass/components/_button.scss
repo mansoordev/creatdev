@@ -17,9 +17,9 @@
         left: 0;
         z-index: -1;
         transition: all 0.4s;
-        // border-radius: 100px;
     }
 
+    // Pulse effect used for the heading section button
     &--pulse {
         animation: PulseEffect 3s infinite;
         transition: all .5s;
@@ -35,14 +35,13 @@
         padding: 12px 40px;
         transition: all .5s;
         position: relative;
-        // border-radius:100px;
         border: none;
         cursor: pointer;
     }
     
+    // Hover shadow effect on all buttons
     &:hover {
         box-shadow: 0 10px 20px rgba($color-black, .2);
-        // transform: scale(1.1);
 
     }
     
@@ -53,6 +52,7 @@
         box-shadow: 0 5px 10px rgba($color-black, 0.2);
     }
     
+    // Styling for the white button
     &--white {
         background-color: $color-white;
         color: $color-grey-dark;
@@ -62,6 +62,7 @@
         }
     }
 
+    // Styling for the gradient blue button
     &--blue {
         background-image: linear-gradient(
         to left, 
@@ -83,6 +84,7 @@
         }
     }
 
+    // Styling for round button
     &--round {
         
         &::after {
@@ -93,30 +95,5 @@
         &:visited {
             border-radius: 100px;
         }
-    }
-}
-
-.btn-text {
-    &:link,
-    &:visited {
-        color: $color-primary;
-        display: inline-block;
-        text-decoration: none;
-        border-bottom: 1px solid $color-primary;
-        padding: 3px;
-        font-size: $default-font-size;
-        transition: all .2s;
-    }
-
-    &:hover {
-        background-color: $color-primary;
-        color: $color-white;
-        box-shadow: 0 1rem 2rem rgba($color-black, .15);
-        transform: translateY(-2px);
-    }
-
-    &:active {
-        box-shadow: 0 .5rem 2rem rgba($color-black, .15);
-        transform: translateY(0px);
     }
 }

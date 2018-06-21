@@ -4,6 +4,8 @@ body {
     font-size: 1.6rem;
     line-height: 1.7;
 }
+
+// Styles for the primary heading
 .heading-primary {
     color:$color-white;
     backface-visibility: hidden;
@@ -42,6 +44,7 @@ body {
     }
 }
 
+// Styles for the secondary heading
 .heading-secondary {
     font-size: 4rem;
     display: inline-block;
@@ -69,12 +72,14 @@ body {
     }
 }
 
+// Styles for the tertiary heading
 .heading-tertiary {
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
 }
 
+// Styles for the normal paragraph
 .paragraph {
     font-size: $default-font-size;
 
@@ -82,6 +87,8 @@ body {
         margin-bottom: 3rem;
     }
 }
+
+// Styles for the footer headings
 .footer__heading {
     font-weight: 600;
     font-size: 2.5rem;

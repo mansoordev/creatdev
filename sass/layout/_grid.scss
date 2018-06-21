@@ -1,3 +1,4 @@
+// Styling for the grid layout in global
 .row {
     max-width: 114rem;
     margin: 0 auto;
@@ -7,7 +8,6 @@
 
         @include respond (tab-port) {
             margin-bottom: $gutter-vertical-small;
-            // margin-left: $gutter-vertical-small;
         }
     }
 

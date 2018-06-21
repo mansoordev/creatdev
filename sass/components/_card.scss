@@ -1,3 +1,4 @@
+// Styles for all the pricing boxes
 .card {
     position: relative;
     perspective: 150rem;
@@ -22,18 +23,21 @@
         &--back {
             transform: rotateY(180deg);
 
+            // Background image with gradient effect of pricing box 1
             &-1 {
                 background-size: cover;
                 background-position: center;
                 background-image: linear-gradient(to right, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85)), url(../img/design1.jpg);
             }
 
+            // Background image with gradient effect of pricing box 2
             &-2 {
                 background-size: cover;
                 background-position: center;
                 background-image: linear-gradient(to right, rgba($color-primary-light, .85), rgba($color-primariy-dark, .85)), url(../img/design4.jpg);
             }
 
+            // Background image with gradient effect of pricing box 3
             &-3 {
                 background-size: cover;
                 background-position: center;
@@ -68,6 +72,7 @@
         }
     }
 
+    // Styling for the headings of pricing boxes
     &__heading {
         font-size: 2.8rem;
         font-weight: 300;
@@ -80,6 +85,7 @@
         width: 100%;
     }
 
+    // Styling for the heading background design
     &__heading-span {
         padding: 1rem 1.5rem;
         box-decoration-break: clone;
@@ -99,6 +105,7 @@
 
     }
 
+    // Styling for the pricing box contents i.e. features etc
     &__details {
         padding: 5rem 3rem 3rem;
         ul {
@@ -118,6 +125,7 @@
         }
     }
 
+    // Styling for the pricing box call to action (flipped)
     &__cta {
         position: absolute;
         text-align: center;
@@ -127,17 +135,20 @@
         transform: translate(-50%, -50%);
     }
 
+    // Styling for the price box (flipped)
     &__price-box {
         text-align: center;
         margin-bottom: 8rem;
         color: $color-white;
     }
 
+    // Styling for the starting from heading text above price (flipped)
     &__price-only {
         font-size: 1.4rem;
         text-transform: uppercase;
     }
 
+    // Styling for the price value in dollars (flipped)
     &__price-value {
         font-size: 6rem;
         font-weight: 100;
@@ -149,6 +160,7 @@
         }
     }
 
+    // Styling for responsive settings
     @include respond(tab-port) {
         height: auto;
 

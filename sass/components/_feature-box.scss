@@ -1,3 +1,4 @@
+// Styling for all the features boxes on the third section
 .feature-box {
     background-color: rgba($color-white, 1);
     font-size: 1.5rem;
@@ -11,6 +12,8 @@
     @include respond(tab-port) {
         padding: 2rem;
     }
+
+    // Styling for the icon of each feature box
     &__icon {
         font-size: 6rem;
         margin-bottom: 0.5rem;
@@ -25,6 +28,7 @@
         }
     }
 
+    // Hover effects for the whole feature box
     &:hover {
         transform: translateY(-1rem) scale(1.2);
         background-color: $color-primary;

@@ -1,7 +1,9 @@
+// Styling for the testimonials section
 .testimonials {
     padding: 8rem 0;
     position: relative;
 
+    // Styling the testimonail box itself
     &__box {
         padding: 2rem;
         text-align: center;
@@ -10,6 +12,7 @@
         background-color: rgba($color-white, .7);
         transition: all .5s ease-in-out;
 
+        // Styling for the profile box including name, image, and job title
         &--profile {
             margin-bottom: 2rem;
 
@@ -43,9 +46,9 @@
             transform: scale(1.1);
         }
 
+        // Styling for the testimonial quote
         &--quote {
             padding: 1rem;
-            // background-color: $color-white;
             color: $color-grey-dark-3;
             position: relative;
             border-radius: 4px;

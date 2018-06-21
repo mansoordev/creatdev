@@ -1,3 +1,4 @@
+// Styling for the top header section
 .header {
     height: 100vh;
     position: relative;
@@ -27,6 +28,7 @@
         text-align: center;
     }
     
+    // Styling for the contact information in top heading section
     &__contact {
         width: 70%;
         height: 10rem;
